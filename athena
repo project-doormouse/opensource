@@ -1,0 +1,33 @@
+#The data for this sample is completely made up. No real data is treated here.
+#The format for the user's input is "x(plural) on x(plural)"
+#unless plural does not come naturally, such as in "pain" or "head".
+
+
+
+polishing_industry = ["cuts on fingers", "dislocations on ankles", "incisions on toes" ]
+polishing_countries = ["India", "Pakistan", "Iran"]
+
+painting_industry = ["sprains on wrists", "cuts on mouth", "pain on hands"]
+painting_countries = ["Ecuador", "Peru", "China"]
+
+service_industry = ["pain on knees", "cuts on toes", "incisions on fingers"]
+service_countries = ["Ghana", "Iran", "Japan"]
+
+
+
+a = input("Type injury and location on the body: e.g. cuts on fingers e.g. incisions on hands: ")
+
+
+for i in polishing_industry:
+   if a == i:
+  	print("Polishing industry. Present in ")
+  	print(polishing_countries)
+for i in painting_industry:
+	if a == i:
+  	print("Painting industry. Present in ")
+  	print(painting_countries)
+for i in service_industry:
+	if a == i:
+  	print("Service industry. Present in ")
+  	print(service_countries)
+
